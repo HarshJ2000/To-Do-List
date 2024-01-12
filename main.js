@@ -51,7 +51,7 @@ function activateDeleteListeners() {
 function activateEditListeners() {
   let editBtn = document.querySelectorAll('.editBtn');
   let updateController = document.querySelectorAll('.update-controller');
-  let inputs = document.querySelectorAll('input-controller textarea');
+  let inputs = document.querySelectorAll('.input-controller textarea');
   editBtn.forEach((eb, i) => {
     eb.addEventListener('click', () => {
       updateController[i].style.display = 'block';
@@ -72,8 +72,8 @@ function activateSaveListeners() {
 
 function activateCancelListeners() {
   const cancelBtn = document.querySelectorAll('.cancelBtn');
-  const updateController = document.querySelectorAll('update-controller');
-  const inputs = document.querySelectorAll('input-controller textarea');
+  const updateController = document.querySelectorAll('.update-controller');
+  const inputs = document.querySelectorAll('.input-controller textarea');
   cancelBtn.forEach((cb, i) => {
     cb.addEventListener('click', () => {
       updateController[i].style.display = 'none';
