@@ -1,7 +1,7 @@
 const itemsArray = localStorage.getItem('items')
   ? JSON.parse(localStorage.getItem('items'))
   : [];
-  
+
 console.log(itemsArray);
 
 document.querySelector('#enter').addEventListener('click', () => {
@@ -96,7 +96,7 @@ function deleteItem(i) {
 
 function displayDate() {
   let date = new Date();
-  date = date.toString().splice(' ');
+  date = date.toString().split(' ');
   document.querySelector('#date').innerHTML =
     date[1] + ' ' + date[2] + ' ' + date[3];
 }
