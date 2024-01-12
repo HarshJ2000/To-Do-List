@@ -15,3 +15,123 @@ button {
     color: #000000;
     background-color: #ffffff;
 }
+
+.app {
+    width: 600px;
+    margin: auto;
+    padding-top: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px 0px 10px 0px;
+}
+
+.to-do-input input {
+    width: 250px;
+    font-family: inherit;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 5px;
+    outline: none;
+}
+
+.to-do-input button {
+    color: #000000;
+    font-family: inherit;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.to-do-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.to-do-list i {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.to-do-list .fa-pen-to-square {
+    color: #ffffff;
+}
+
+.to-do-list button {
+    padding: 8px;
+    font-family: inherit;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.5);
+}
+
+.input-controller {
+    display: flex;
+    gap: 10px;
+}
+
+.input-controller textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    line-height: 1.4;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: inherit;
+    transition: all 0.30s ease-in-out;
+}
+
+textarea:focus {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.edit-controller {
+    display: flex;
+    gap: 5px;
+}
+
+.update-controller {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .app {
+        width: 95%;
+        text-align: center;
+    }
+
+    .input-header {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .to-do-input {
+        display: flex;
+    }
+
+    .to-do-input input {
+        width: 300px;
+    }
+}
