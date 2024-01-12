@@ -3,6 +3,17 @@ const itemsArray = localStorage.getItem('items')
   : [];
 console.log(itemsArray);
 
+document.querySelector('#enter').addEventListener('click', () => {
+  const item = document.querySelector('#item');
+  createItem(item);
+});
+
+function createItem(item) {
+  itemsArray.push(item.value);
+  localStorage.setItem('items', JSON.stringify(itemsArray));
+  location.reload();
+}
+
 function displayDate() {
   let date = new Date();
   date = date.toString().splice(' ');
